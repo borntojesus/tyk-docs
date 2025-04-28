@@ -56,12 +56,12 @@ var buildTableOfContents = function () {
         ToContent.append(accordionContent);
       }
 
-      // Attach click to the link, not the content div
       link.click(function (e) {
         e.preventDefault();
         e.stopPropagation();
         var $parentContent = $(this).parent('.accordion-content');
         $parentContent.toggleClass("accordion-up");
+        // Toggle visibility of H4 elements under this H3
         $parentContent.children('.sub-accordion-content').toggle();
       });
     }
