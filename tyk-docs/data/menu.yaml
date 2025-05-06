@@ -396,7 +396,7 @@ menu:
     menu:
       - title: "Overview"
         path: /portal/overview
-        category: Page
+        category: Label
         show: True
       - title: "Install and Configure"
         path: /portal/install
